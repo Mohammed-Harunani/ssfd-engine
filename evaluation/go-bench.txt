@@ -1,0 +1,18 @@
+goos: linux
+goarch: amd64
+pkg: ssfd-engine/eval
+cpu: INTEL(R) XEON(R) PLATINUM 8573C
+BenchmarkWorkloads/year/generate-4         	       1	  32292461 ns/op	     57972 journals/s	14381264 B/op	  123941 allocs/op
+BenchmarkWorkloads/year/canonical-json-4   	       1	  12825783 ns/op	 122.89 MB/s	 6357416 B/op	   11870 allocs/op
+BenchmarkWorkloads/year/camt-4             	       1	  53758593 ns/op	  43.60 MB/s	19136088 B/op	   83314 allocs/op
+BenchmarkWorkloads/year/flat-cp037-4       	       1	  21542693 ns/op	  35.93 MB/s	12023728 B/op	   72791 allocs/op
+BenchmarkWorkloads/decade/generate-4       	       1	 391666474 ns/op	     47612 journals/s	151893504 B/op	 1216037 allocs/op
+BenchmarkWorkloads/decade/canonical-json-4 	       1	 113832912 ns/op	 138.96 MB/s	54747152 B/op	  111977 allocs/op
+BenchmarkWorkloads/decade/camt-4           	       1	 445678193 ns/op	  51.96 MB/s	174457544 B/op	  823443 allocs/op
+BenchmarkWorkloads/decade/flat-cp037-4     	       1	 160838726 ns/op	  47.61 MB/s	114878824 B/op	  726602 allocs/op
+BenchmarkWorkloads/stress/generate-4       	       1	1887557835 ns/op	     52979 journals/s	765577448 B/op	 4704243 allocs/op
+BenchmarkWorkloads/stress/canonical-json-4 	       1	1110503653 ns/op	  76.64 MB/s	382342752 B/op	  600036 allocs/op
+BenchmarkWorkloads/stress/camt-4           	       1	2707502277 ns/op	  44.85 MB/s	957121008 B/op	 4300123 allocs/op
+BenchmarkWorkloads/stress/flat-cp037-4     	       1	1597731149 ns/op	  25.04 MB/s	692567680 B/op	 3800608 allocs/op
+PASS
+ok  	ssfd-engine/eval	15.148s

@@ -1,0 +1,30 @@
+       01  SSFD-RECORD.
+           05  SSFD-RAW                  PIC X(200).
+           05  SSFD-HEADER REDEFINES SSFD-RAW.
+               10  SSFD-H-TYPE           PIC X.
+               10  SSFD-H-SCHEMA         PIC X(7).
+               10  SSFD-H-BOOK           PIC 9(20).
+               10  FILLER                PIC X(172).
+           05  SSFD-DETAIL REDEFINES SSFD-RAW.
+               10  SSFD-D-TYPE           PIC X.
+               10  SSFD-D-BOOK           PIC 9(20).
+               10  SSFD-D-JOURNAL        PIC 9(20).
+               10  SSFD-D-SEQUENCE       PIC 9(20).
+               10  SSFD-D-TRANSACTION    PIC 9(20).
+               10  SSFD-D-ORIGINAL       PIC 9(20).
+               10  SSFD-D-ACCOUNT        PIC 9(20).
+               10  SSFD-D-POSITION       PIC 9(10).
+               10  SSFD-D-CURRENCY       PIC X(3).
+               10  SSFD-D-KIND           PIC 9.
+               10  SSFD-D-SIGNED-MINOR   PIC S9(19)
+                                            SIGN IS TRAILING.
+               10  SSFD-D-EFFECTIVE-UTC  PIC X(30).
+               10  FILLER                PIC X(16).
+           05  SSFD-TRAILER REDEFINES SSFD-RAW.
+               10  SSFD-T-TYPE           PIC X.
+               10  SSFD-T-CURRENCY       PIC X(3).
+               10  SSFD-T-DETAIL-COUNT   PIC 9(20).
+               10  SSFD-T-DEBIT-TOTAL    PIC 9(31).
+               10  SSFD-T-CREDIT-TOTAL   PIC 9(31).
+               10  SSFD-T-SHA256         PIC X(64).
+               10  FILLER                PIC X(50).

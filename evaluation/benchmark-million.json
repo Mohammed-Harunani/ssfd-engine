@@ -1,0 +1,108 @@
+{
+  "Benchmark": {
+    "GoVersion": "go1.24.13",
+    "OS": "linux",
+    "Arch": "amd64",
+    "GOMAXPROCS": 4,
+    "LogicalCPUs": 9,
+    "Config": {
+      "Workloads": [
+        "stress"
+      ],
+      "Seed": 42,
+      "StressJournals": 1000000,
+      "Repeats": 2,
+      "GenerationOnly": true
+    },
+    "Deterministic": true,
+    "Runs": [
+      {
+        "Workload": "stress",
+        "Repeat": 1,
+        "Transactions": 1000000,
+        "Journals": 1000000,
+        "Postings": 2000000,
+        "Generation": {
+          "Name": "generate",
+          "Nanoseconds": 22045203040,
+          "BaselineHeapBytes": 110600,
+          "PeakHeapBytes": 4982781936,
+          "TotalAllocatedBytes": 7861832640,
+          "OutputBytes": 0,
+          "SHA256": ""
+        },
+        "Audit": {
+          "Name": "audit",
+          "Nanoseconds": 308482536,
+          "BaselineHeapBytes": 549417728,
+          "PeakHeapBytes": 605420160,
+          "TotalAllocatedBytes": 56002432,
+          "OutputBytes": 0,
+          "SHA256": ""
+        },
+        "Serialization": null,
+        "JournalsPerSecond": 45361.34224690725,
+        "PostingsPerSecond": 90722.6844938145,
+        "TrialBalance": [
+          {
+            "Currency": "GBP",
+            "Debits": "25002350514",
+            "Credits": "25002350514",
+            "Difference": "0"
+          },
+          {
+            "Currency": "USD",
+            "Debits": "24981853198",
+            "Credits": "24981853198",
+            "Difference": "0"
+          }
+        ],
+        "CanonicalSHA256": "5d4a6678a6ba767f104f1f376bbad410d038273ada2a80ddf63c07d94a9ec29b"
+      },
+      {
+        "Workload": "stress",
+        "Repeat": 2,
+        "Transactions": 1000000,
+        "Journals": 1000000,
+        "Postings": 2000000,
+        "Generation": {
+          "Name": "generate",
+          "Nanoseconds": 18263837630,
+          "BaselineHeapBytes": 187248,
+          "PeakHeapBytes": 4700422512,
+          "TotalAllocatedBytes": 7863028600,
+          "OutputBytes": 0,
+          "SHA256": ""
+        },
+        "Audit": {
+          "Name": "audit",
+          "Nanoseconds": 342668486,
+          "BaselineHeapBytes": 549447008,
+          "PeakHeapBytes": 605448848,
+          "TotalAllocatedBytes": 56001840,
+          "OutputBytes": 0,
+          "SHA256": ""
+        },
+        "Serialization": null,
+        "JournalsPerSecond": 54753.005379187656,
+        "PostingsPerSecond": 109506.01075837531,
+        "TrialBalance": [
+          {
+            "Currency": "GBP",
+            "Debits": "25002350514",
+            "Credits": "25002350514",
+            "Difference": "0"
+          },
+          {
+            "Currency": "USD",
+            "Debits": "24981853198",
+            "Credits": "24981853198",
+            "Difference": "0"
+          }
+        ],
+        "CanonicalSHA256": "5d4a6678a6ba767f104f1f376bbad410d038273ada2a80ddf63c07d94a9ec29b"
+      }
+    ]
+  },
+  "Mutation": null
+}

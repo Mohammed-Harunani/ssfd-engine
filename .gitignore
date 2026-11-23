@@ -1,0 +1,13 @@
+# Local builds and generated exports
+/dist/
+/test-exports/
+/ssfd-demo
+/ssfd-eval
+*.exe
+*.test
+/coverage.out
+
+# OS clutter
+.DS_Store
+Thumbs.db
+Desktop.ini

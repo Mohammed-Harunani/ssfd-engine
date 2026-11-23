@@ -1,0 +1,1569 @@
+{
+  "Benchmark": {
+    "GoVersion": "go1.24.13",
+    "OS": "linux",
+    "Arch": "amd64",
+    "GOMAXPROCS": 4,
+    "LogicalCPUs": 9,
+    "Config": {
+      "Workloads": [
+        "year",
+        "decade",
+        "stress"
+      ],
+      "Seed": 42,
+      "StressJournals": 100000,
+      "Repeats": 3,
+      "GenerationOnly": false
+    },
+    "Deterministic": true,
+    "Runs": [
+      {
+        "Workload": "year",
+        "Repeat": 1,
+        "Transactions": 1872,
+        "Journals": 1872,
+        "Postings": 3866,
+        "Generation": {
+          "Name": "generate",
+          "Nanoseconds": 34578686,
+          "BaselineHeapBytes": 111048,
+          "PeakHeapBytes": 8358584,
+          "TotalAllocatedBytes": 14395272,
+          "OutputBytes": 0,
+          "SHA256": ""
+        },
+        "Audit": {
+          "Name": "audit",
+          "Nanoseconds": 1492866,
+          "BaselineHeapBytes": 1139080,
+          "PeakHeapBytes": 1253120,
+          "TotalAllocatedBytes": 114040,
+          "OutputBytes": 0,
+          "SHA256": ""
+        },
+        "Serialization": [
+          {
+            "Name": "canonical-json",
+            "Nanoseconds": 14575179,
+            "BaselineHeapBytes": 1139800,
+            "PeakHeapBytes": 6124296,
+            "TotalAllocatedBytes": 6360256,
+            "OutputBytes": 1576167,
+            "SHA256": "6b15656c387a82c39da4b28cada570814702152b4774a4cc851318bfd294e65c"
+          },
+          {
+            "Name": "camt",
+            "Nanoseconds": 58272786,
+            "BaselineHeapBytes": 3264440,
+            "PeakHeapBytes": 12897096,
+            "TotalAllocatedBytes": 19137296,
+            "OutputBytes": 2343671,
+            "SHA256": "c57f63cd672e2cb29e0a3febe56b6b53dea997a68cbbe8056d429bb09a671c71"
+          },
+          {
+            "Name": "flat-cp037",
+            "Nanoseconds": 24256090,
+            "BaselineHeapBytes": 1172416,
+            "PeakHeapBytes": 5435384,
+            "TotalAllocatedBytes": 12024496,
+            "OutputBytes": 774000,
+            "SHA256": "22a2bf9b51ebe9dea48bac6b508ba1440d60901fdebf18936dcc1f7aad993d70"
+          }
+        ],
+        "JournalsPerSecond": 54137.395504271044,
+        "PostingsPerSecond": 111802.97597196145,
+        "TrialBalance": [
+          {
+            "Currency": "GBP",
+            "Debits": "128780004",
+            "Credits": "128780004",
+            "Difference": "0"
+          },
+          {
+            "Currency": "USD",
+            "Debits": "324404",
+            "Credits": "324404",
+            "Difference": "0"
+          }
+        ],
+        "CanonicalSHA256": ""
+      },
+      {
+        "Workload": "year",
+        "Repeat": 2,
+        "Transactions": 1872,
+        "Journals": 1872,
+        "Postings": 3866,
+        "Generation": {
+          "Name": "generate",
+          "Nanoseconds": 46216160,
+          "BaselineHeapBytes": 190720,
+          "PeakHeapBytes": 8266656,
+          "TotalAllocatedBytes": 14340104,
+          "OutputBytes": 0,
+          "SHA256": ""
+        },
+        "Audit": {
+          "Name": "audit",
+          "Nanoseconds": 513777,
+          "BaselineHeapBytes": 1177752,
+          "PeakHeapBytes": 1291760,
+          "TotalAllocatedBytes": 114008,
+          "OutputBytes": 0,
+          "SHA256": ""
+        },
+        "Serialization": [
+          {
+            "Name": "canonical-json",
+            "Nanoseconds": 20545103,
+            "BaselineHeapBytes": 1174144,
+            "PeakHeapBytes": 6138336,
+            "TotalAllocatedBytes": 6326848,
+            "OutputBytes": 1576167,
+            "SHA256": "6b15656c387a82c39da4b28cada570814702152b4774a4cc851318bfd294e65c"
+          },
+          {
+            "Name": "camt",
+            "Nanoseconds": 51063130,
+            "BaselineHeapBytes": 3278984,
+            "PeakHeapBytes": 12905352,
+            "TotalAllocatedBytes": 19124400,
+            "OutputBytes": 2343671,
+            "SHA256": "c57f63cd672e2cb29e0a3febe56b6b53dea997a68cbbe8056d429bb09a671c71"
+          },
+          {
+            "Name": "flat-cp037",
+            "Nanoseconds": 22804520,
+            "BaselineHeapBytes": 1180672,
+            "PeakHeapBytes": 5189240,
+            "TotalAllocatedBytes": 12024088,
+            "OutputBytes": 774000,
+            "SHA256": "22a2bf9b51ebe9dea48bac6b508ba1440d60901fdebf18936dcc1f7aad993d70"
+          }
+        ],
+        "JournalsPerSecond": 40505.31242751453,
+        "PostingsPerSecond": 83650.39414784785,
+        "TrialBalance": [
+          {
+            "Currency": "GBP",
+            "Debits": "128780004",
+            "Credits": "128780004",
+            "Difference": "0"
+          },
+          {
+            "Currency": "USD",
+            "Debits": "324404",
+            "Credits": "324404",
+            "Difference": "0"
+          }
+        ],
+        "CanonicalSHA256": ""
+      },
+      {
+        "Workload": "year",
+        "Repeat": 3,
+        "Transactions": 1872,
+        "Journals": 1872,
+        "Postings": 3866,
+        "Generation": {
+          "Name": "generate",
+          "Nanoseconds": 31425197,
+          "BaselineHeapBytes": 198664,
+          "PeakHeapBytes": 8608544,
+          "TotalAllocatedBytes": 14019192,
+          "OutputBytes": 0,
+          "SHA256": ""
+        },
+        "Audit": {
+          "Name": "audit",
+          "Nanoseconds": 543082,
+          "BaselineHeapBytes": 1185408,
+          "PeakHeapBytes": 1299064,
+          "TotalAllocatedBytes": 113656,
+          "OutputBytes": 0,
+          "SHA256": ""
+        },
+        "Serialization": [
+          {
+            "Name": "canonical-json",
+            "Nanoseconds": 23034157,
+            "BaselineHeapBytes": 1181104,
+            "PeakHeapBytes": 6140208,
+            "TotalAllocatedBytes": 6321760,
+            "OutputBytes": 1576167,
+            "SHA256": "6b15656c387a82c39da4b28cada570814702152b4774a4cc851318bfd294e65c"
+          },
+          {
+            "Name": "camt",
+            "Nanoseconds": 52391632,
+            "BaselineHeapBytes": 3280864,
+            "PeakHeapBytes": 12907352,
+            "TotalAllocatedBytes": 19125024,
+            "OutputBytes": 2343671,
+            "SHA256": "c57f63cd672e2cb29e0a3febe56b6b53dea997a68cbbe8056d429bb09a671c71"
+          },
+          {
+            "Name": "flat-cp037",
+            "Nanoseconds": 25911425,
+            "BaselineHeapBytes": 1182752,
+            "PeakHeapBytes": 5544904,
+            "TotalAllocatedBytes": 12024360,
+            "OutputBytes": 774000,
+            "SHA256": "22a2bf9b51ebe9dea48bac6b508ba1440d60901fdebf18936dcc1f7aad993d70"
+          }
+        ],
+        "JournalsPerSecond": 59570.03228969416,
+        "PostingsPerSecond": 123022.29958972095,
+        "TrialBalance": [
+          {
+            "Currency": "GBP",
+            "Debits": "128780004",
+            "Credits": "128780004",
+            "Difference": "0"
+          },
+          {
+            "Currency": "USD",
+            "Debits": "324404",
+            "Credits": "324404",
+            "Difference": "0"
+          }
+        ],
+        "CanonicalSHA256": ""
+      },
+      {
+        "Workload": "decade",
+        "Repeat": 1,
+        "Transactions": 18648,
+        "Journals": 18648,
+        "Postings": 38284,
+        "Generation": {
+          "Name": "generate",
+          "Nanoseconds": 533089367,
+          "BaselineHeapBytes": 200656,
+          "PeakHeapBytes": 84083344,
+          "TotalAllocatedBytes": 150870832,
+          "OutputBytes": 0,
+          "SHA256": ""
+        },
+        "Audit": {
+          "Name": "audit",
+          "Nanoseconds": 6356262,
+          "BaselineHeapBytes": 10129688,
+          "PeakHeapBytes": 11205408,
+          "TotalAllocatedBytes": 1075720,
+          "OutputBytes": 0,
+          "SHA256": ""
+        },
+        "Serialization": [
+          {
+            "Name": "canonical-json",
+            "Nanoseconds": 130230298,
+            "BaselineHeapBytes": 10127136,
+            "PeakHeapBytes": 54160032,
+            "TotalAllocatedBytes": 54751216,
+            "OutputBytes": 15818299,
+            "SHA256": "92f52d84c285bd0f85108eb0b4cd760d5e388f38c9ae26fc39e3905cf086ba0a"
+          },
+          {
+            "Name": "camt",
+            "Nanoseconds": 517293448,
+            "BaselineHeapBytes": 26907096,
+            "PeakHeapBytes": 110059760,
+            "TotalAllocatedBytes": 174459240,
+            "OutputBytes": 23155368,
+            "SHA256": "8bdd4fe8930100e1013ad6b12e54305f32a90da63e7dc32b07aca8e15f52a511"
+          },
+          {
+            "Name": "flat-cp037",
+            "Nanoseconds": 185667512,
+            "BaselineHeapBytes": 10128400,
+            "PeakHeapBytes": 54787848,
+            "TotalAllocatedBytes": 114881640,
+            "OutputBytes": 7657600,
+            "SHA256": "9301ab352096cc34ce8c9bb443432580000d57d0fb43af8f558d38f198db2feb"
+          }
+        ],
+        "JournalsPerSecond": 34981.0016000563,
+        "PostingsPerSecond": 71815.35098973378,
+        "TrialBalance": [
+          {
+            "Currency": "GBP",
+            "Debits": "358350000",
+            "Credits": "358350000",
+            "Difference": "0"
+          },
+          {
+            "Currency": "USD",
+            "Debits": "2902398",
+            "Credits": "2902398",
+            "Difference": "0"
+          }
+        ],
+        "CanonicalSHA256": ""
+      },
+      {
+        "Workload": "decade",
+        "Repeat": 2,
+        "Transactions": 18648,
+        "Journals": 18648,
+        "Postings": 38284,
+        "Generation": {
+          "Name": "generate",
+          "Nanoseconds": 298373333,
+          "BaselineHeapBytes": 203360,
+          "PeakHeapBytes": 87884128,
+          "TotalAllocatedBytes": 152050984,
+          "OutputBytes": 0,
+          "SHA256": ""
+        },
+        "Audit": {
+          "Name": "audit",
+          "Nanoseconds": 6548966,
+          "BaselineHeapBytes": 10127816,
+          "PeakHeapBytes": 11203264,
+          "TotalAllocatedBytes": 1075448,
+          "OutputBytes": 0,
+          "SHA256": ""
+        },
+        "Serialization": [
+          {
+            "Name": "canonical-json",
+            "Nanoseconds": 175127077,
+            "BaselineHeapBytes": 10128752,
+            "PeakHeapBytes": 54161536,
+            "TotalAllocatedBytes": 54751168,
+            "OutputBytes": 15818299,
+            "SHA256": "92f52d84c285bd0f85108eb0b4cd760d5e388f38c9ae26fc39e3905cf086ba0a"
+          },
+          {
+            "Name": "camt",
+            "Nanoseconds": 506468410,
+            "BaselineHeapBytes": 26908536,
+            "PeakHeapBytes": 99337752,
+            "TotalAllocatedBytes": 174457968,
+            "OutputBytes": 23155368,
+            "SHA256": "8bdd4fe8930100e1013ad6b12e54305f32a90da63e7dc32b07aca8e15f52a511"
+          },
+          {
+            "Name": "flat-cp037",
+            "Nanoseconds": 228761693,
+            "BaselineHeapBytes": 10130032,
+            "PeakHeapBytes": 52806864,
+            "TotalAllocatedBytes": 114881184,
+            "OutputBytes": 7657600,
+            "SHA256": "9301ab352096cc34ce8c9bb443432580000d57d0fb43af8f558d38f198db2feb"
+          }
+        ],
+        "JournalsPerSecond": 62498.882901174016,
+        "PostingsPerSecond": 128309.05367806445,
+        "TrialBalance": [
+          {
+            "Currency": "GBP",
+            "Debits": "358350000",
+            "Credits": "358350000",
+            "Difference": "0"
+          },
+          {
+            "Currency": "USD",
+            "Debits": "2902398",
+            "Credits": "2902398",
+            "Difference": "0"
+          }
+        ],
+        "CanonicalSHA256": ""
+      },
+      {
+        "Workload": "decade",
+        "Repeat": 3,
+        "Transactions": 18648,
+        "Journals": 18648,
+        "Postings": 38284,
+        "Generation": {
+          "Name": "generate",
+          "Nanoseconds": 348306456,
+          "BaselineHeapBytes": 205776,
+          "PeakHeapBytes": 92568208,
+          "TotalAllocatedBytes": 152035400,
+          "OutputBytes": 0,
+          "SHA256": ""
+        },
+        "Audit": {
+          "Name": "audit",
+          "Nanoseconds": 5729626,
+          "BaselineHeapBytes": 10131424,
+          "PeakHeapBytes": 11206424,
+          "TotalAllocatedBytes": 1075000,
+          "OutputBytes": 0,
+          "SHA256": ""
+        },
+        "Serialization": [
+          {
+            "Name": "canonical-json",
+            "Nanoseconds": 163727530,
+            "BaselineHeapBytes": 10131664,
+            "PeakHeapBytes": 54164416,
+            "TotalAllocatedBytes": 54751072,
+            "OutputBytes": 15818299,
+            "SHA256": "92f52d84c285bd0f85108eb0b4cd760d5e388f38c9ae26fc39e3905cf086ba0a"
+          },
+          {
+            "Name": "camt",
+            "Nanoseconds": 598794201,
+            "BaselineHeapBytes": 26911304,
+            "PeakHeapBytes": 110062520,
+            "TotalAllocatedBytes": 174457712,
+            "OutputBytes": 23155368,
+            "SHA256": "8bdd4fe8930100e1013ad6b12e54305f32a90da63e7dc32b07aca8e15f52a511"
+          },
+          {
+            "Name": "flat-cp037",
+            "Nanoseconds": 192202582,
+            "BaselineHeapBytes": 10132784,
+            "PeakHeapBytes": 42790248,
+            "TotalAllocatedBytes": 114881120,
+            "OutputBytes": 7657600,
+            "SHA256": "9301ab352096cc34ce8c9bb443432580000d57d0fb43af8f558d38f198db2feb"
+          }
+        ],
+        "JournalsPerSecond": 53539.059293233426,
+        "PostingsPerSecond": 109914.70109299381,
+        "TrialBalance": [
+          {
+            "Currency": "GBP",
+            "Debits": "358350000",
+            "Credits": "358350000",
+            "Difference": "0"
+          },
+          {
+            "Currency": "USD",
+            "Debits": "2902398",
+            "Credits": "2902398",
+            "Difference": "0"
+          }
+        ],
+        "CanonicalSHA256": ""
+      },
+      {
+        "Workload": "stress",
+        "Repeat": 1,
+        "Transactions": 100000,
+        "Journals": 100000,
+        "Postings": 200000,
+        "Generation": {
+          "Name": "generate",
+          "Nanoseconds": 2185641532,
+          "BaselineHeapBytes": 207632,
+          "PeakHeapBytes": 419809992,
+          "TotalAllocatedBytes": 765583856,
+          "OutputBytes": 0,
+          "SHA256": ""
+        },
+        "Audit": {
+          "Name": "audit",
+          "Nanoseconds": 28266310,
+          "BaselineHeapBytes": 56982024,
+          "PeakHeapBytes": 62584056,
+          "TotalAllocatedBytes": 5602032,
+          "OutputBytes": 0,
+          "SHA256": ""
+        },
+        "Serialization": [
+          {
+            "Name": "canonical-json",
+            "Nanoseconds": 1321856126,
+            "BaselineHeapBytes": 56982960,
+            "PeakHeapBytes": 350974592,
+            "TotalAllocatedBytes": 382347312,
+            "OutputBytes": 85105435,
+            "SHA256": "7ab2da69d2477156ae3d9deb93eba5463a99be8501f6e397a0f7707b5d9339ee"
+          },
+          {
+            "Name": "camt",
+            "Nanoseconds": 2628107188,
+            "BaselineHeapBytes": 191202920,
+            "PeakHeapBytes": 514410272,
+            "TotalAllocatedBytes": 957124088,
+            "OutputBytes": 121440616,
+            "SHA256": "b9f2b2a5bde1f3b94a3b5765c3b30be4b9665334f704b96d493a35432ffa8ca4"
+          },
+          {
+            "Name": "flat-cp037",
+            "Nanoseconds": 1148351487,
+            "BaselineHeapBytes": 56984528,
+            "PeakHeapBytes": 267936768,
+            "TotalAllocatedBytes": 692571560,
+            "OutputBytes": 40000800,
+            "SHA256": "8a1d6e84cf1c1669c7dbb140f5b410deea70f80e566e336f9c007f7af1acc29f"
+          }
+        ],
+        "JournalsPerSecond": 45753.15692710766,
+        "PostingsPerSecond": 91506.31385421532,
+        "TrialBalance": [
+          {
+            "Currency": "GBP",
+            "Debits": "2498329232",
+            "Credits": "2498329232",
+            "Difference": "0"
+          },
+          {
+            "Currency": "USD",
+            "Debits": "2495732971",
+            "Credits": "2495732971",
+            "Difference": "0"
+          }
+        ],
+        "CanonicalSHA256": ""
+      },
+      {
+        "Workload": "stress",
+        "Repeat": 2,
+        "Transactions": 100000,
+        "Journals": 100000,
+        "Postings": 200000,
+        "Generation": {
+          "Name": "generate",
+          "Nanoseconds": 1826950411,
+          "BaselineHeapBytes": 209136,
+          "PeakHeapBytes": 448106872,
+          "TotalAllocatedBytes": 765575920,
+          "OutputBytes": 0,
+          "SHA256": ""
+        },
+        "Audit": {
+          "Name": "audit",
+          "Nanoseconds": 35792031,
+          "BaselineHeapBytes": 56983928,
+          "PeakHeapBytes": 62585976,
+          "TotalAllocatedBytes": 5602048,
+          "OutputBytes": 0,
+          "SHA256": ""
+        },
+        "Serialization": [
+          {
+            "Name": "canonical-json",
+            "Nanoseconds": 859839538,
+            "BaselineHeapBytes": 56984616,
+            "PeakHeapBytes": 350976768,
+            "TotalAllocatedBytes": 382348056,
+            "OutputBytes": 85105435,
+            "SHA256": "7ab2da69d2477156ae3d9deb93eba5463a99be8501f6e397a0f7707b5d9339ee"
+          },
+          {
+            "Name": "camt",
+            "Nanoseconds": 2226774278,
+            "BaselineHeapBytes": 191205448,
+            "PeakHeapBytes": 507454008,
+            "TotalAllocatedBytes": 957122760,
+            "OutputBytes": 121440616,
+            "SHA256": "b9f2b2a5bde1f3b94a3b5765c3b30be4b9665334f704b96d493a35432ffa8ca4"
+          },
+          {
+            "Name": "flat-cp037",
+            "Nanoseconds": 944720286,
+            "BaselineHeapBytes": 56986128,
+            "PeakHeapBytes": 275160240,
+            "TotalAllocatedBytes": 692571168,
+            "OutputBytes": 40000800,
+            "SHA256": "8a1d6e84cf1c1669c7dbb140f5b410deea70f80e566e336f9c007f7af1acc29f"
+          }
+        ],
+        "JournalsPerSecond": 54736.023155255745,
+        "PostingsPerSecond": 109472.04631051149,
+        "TrialBalance": [
+          {
+            "Currency": "GBP",
+            "Debits": "2498329232",
+            "Credits": "2498329232",
+            "Difference": "0"
+          },
+          {
+            "Currency": "USD",
+            "Debits": "2495732971",
+            "Credits": "2495732971",
+            "Difference": "0"
+          }
+        ],
+        "CanonicalSHA256": ""
+      },
+      {
+        "Workload": "stress",
+        "Repeat": 3,
+        "Transactions": 100000,
+        "Journals": 100000,
+        "Postings": 200000,
+        "Generation": {
+          "Name": "generate",
+          "Nanoseconds": 1507267607,
+          "BaselineHeapBytes": 211344,
+          "PeakHeapBytes": 477602360,
+          "TotalAllocatedBytes": 765574096,
+          "OutputBytes": 0,
+          "SHA256": ""
+        },
+        "Audit": {
+          "Name": "audit",
+          "Nanoseconds": 37321144,
+          "BaselineHeapBytes": 56985496,
+          "PeakHeapBytes": 62587544,
+          "TotalAllocatedBytes": 5602048,
+          "OutputBytes": 0,
+          "SHA256": ""
+        },
+        "Serialization": [
+          {
+            "Name": "canonical-json",
+            "Nanoseconds": 836881302,
+            "BaselineHeapBytes": 56986184,
+            "PeakHeapBytes": 350978432,
+            "TotalAllocatedBytes": 382348136,
+            "OutputBytes": 85105435,
+            "SHA256": "7ab2da69d2477156ae3d9deb93eba5463a99be8501f6e397a0f7707b5d9339ee"
+          },
+          {
+            "Name": "camt",
+            "Nanoseconds": 2390563974,
+            "BaselineHeapBytes": 191206808,
+            "PeakHeapBytes": 514411528,
+            "TotalAllocatedBytes": 957122832,
+            "OutputBytes": 121440616,
+            "SHA256": "b9f2b2a5bde1f3b94a3b5765c3b30be4b9665334f704b96d493a35432ffa8ca4"
+          },
+          {
+            "Name": "flat-cp037",
+            "Nanoseconds": 936702827,
+            "BaselineHeapBytes": 56987248,
+            "PeakHeapBytes": 271353448,
+            "TotalAllocatedBytes": 692570392,
+            "OutputBytes": 40000800,
+            "SHA256": "8a1d6e84cf1c1669c7dbb140f5b410deea70f80e566e336f9c007f7af1acc29f"
+          }
+        ],
+        "JournalsPerSecond": 66345.21934630816,
+        "PostingsPerSecond": 132690.43869261633,
+        "TrialBalance": [
+          {
+            "Currency": "GBP",
+            "Debits": "2498329232",
+            "Credits": "2498329232",
+            "Difference": "0"
+          },
+          {
+            "Currency": "USD",
+            "Debits": "2495732971",
+            "Credits": "2495732971",
+            "Difference": "0"
+          }
+        ],
+        "CanonicalSHA256": ""
+      }
+    ]
+  },
+  "Mutation": {
+    "CasesPerSeed": 192,
+    "Mutants": [
+      "fx_ties_round_up",
+      "missing_idempotency",
+      "leap_day_interest_omitted",
+      "dst_fold_collision",
+      "overdraft_floor_exclusive",
+      "refund_cap_missing",
+      "currency_mismatch_accepted",
+      "frozen_debit_bypass",
+      "clearing_without_authorization",
+      "reversal_credit_omitted",
+      "cutoff_rounded_to_second",
+      "settlement_credit_short_one",
+      "stale_authorization_balance_write"
+    ],
+    "Runs": [
+      {
+        "Seed": 42,
+        "Strategies": [
+          {
+            "Strategy": "naive",
+            "Cases": 192,
+            "Operations": 192,
+            "Killed": [
+              "fx_ties_round_up",
+              "currency_mismatch_accepted",
+              "settlement_credit_short_one"
+            ],
+            "FirstWitness": {
+              "currency_mismatch_accepted": "independent row 4",
+              "fx_ties_round_up": "independent row 40",
+              "settlement_credit_short_one": "independent row 3"
+            }
+          },
+          {
+            "Strategy": "ssfd",
+            "Cases": 192,
+            "Operations": 213,
+            "Killed": [
+              "fx_ties_round_up",
+              "settlement_credit_short_one"
+            ],
+            "FirstWitness": {
+              "fx_ties_round_up": "cross_border_fx transaction 780",
+              "settlement_credit_short_one": "cash_sweep transaction 1214"
+            }
+          },
+          {
+            "Strategy": "ssfd-chaos",
+            "Cases": 192,
+            "Operations": 320,
+            "Killed": [
+              "fx_ties_round_up",
+              "missing_idempotency",
+              "leap_day_interest_omitted",
+              "dst_fold_collision",
+              "overdraft_floor_exclusive",
+              "refund_cap_missing",
+              "frozen_debit_bypass",
+              "clearing_without_authorization",
+              "reversal_credit_omitted",
+              "cutoff_rounded_to_second",
+              "settlement_credit_short_one",
+              "stale_authorization_balance_write"
+            ],
+            "FirstWitness": {
+              "clearing_without_authorization": "clearing-before-auth chaos transaction 1099511630195",
+              "cutoff_rounded_to_second": "midnight cutoff chaos transaction 1099511630554",
+              "dst_fold_collision": "DST fold pair chaos transaction 1099511630484",
+              "frozen_debit_bypass": "frozen clearing chaos transaction 1099511630724",
+              "fx_ties_round_up": "cross_border_fx transaction 314",
+              "leap_day_interest_omitted": "leap accrual chaos transaction 1099511628312",
+              "missing_idempotency": "same-key retry chaos transaction 1099511629296",
+              "overdraft_floor_exclusive": "overdraft edge chaos transaction 1099511630874",
+              "refund_cap_missing": "refund cap chaos transaction 1099511629704",
+              "reversal_credit_omitted": "overdraft edge chaos transaction 1099511630874",
+              "settlement_credit_short_one": "cash_sweep transaction 1219",
+              "stale_authorization_balance_write": "interleaved settle chaos transaction 1099511628168"
+            }
+          }
+        ]
+      },
+      {
+        "Seed": 43,
+        "Strategies": [
+          {
+            "Strategy": "naive",
+            "Cases": 192,
+            "Operations": 192,
+            "Killed": [
+              "fx_ties_round_up",
+              "currency_mismatch_accepted",
+              "settlement_credit_short_one"
+            ],
+            "FirstWitness": {
+              "currency_mismatch_accepted": "independent row 3",
+              "fx_ties_round_up": "independent row 44",
+              "settlement_credit_short_one": "independent row 11"
+            }
+          },
+          {
+            "Strategy": "ssfd",
+            "Cases": 192,
+            "Operations": 213,
+            "Killed": [
+              "fx_ties_round_up",
+              "settlement_credit_short_one"
+            ],
+            "FirstWitness": {
+              "fx_ties_round_up": "cross_border_fx transaction 1781",
+              "settlement_credit_short_one": "cash_sweep transaction 758"
+            }
+          },
+          {
+            "Strategy": "ssfd-chaos",
+            "Cases": 192,
+            "Operations": 322,
+            "Killed": [
+              "fx_ties_round_up",
+              "missing_idempotency",
+              "leap_day_interest_omitted",
+              "dst_fold_collision",
+              "overdraft_floor_exclusive",
+              "refund_cap_missing",
+              "frozen_debit_bypass",
+              "clearing_without_authorization",
+              "reversal_credit_omitted",
+              "cutoff_rounded_to_second",
+              "settlement_credit_short_one",
+              "stale_authorization_balance_write"
+            ],
+            "FirstWitness": {
+              "clearing_without_authorization": "clearing-before-auth chaos transaction 1099511628836",
+              "cutoff_rounded_to_second": "midnight cutoff chaos transaction 1099511631049",
+              "dst_fold_collision": "DST fold pair chaos transaction 1099511630484",
+              "frozen_debit_bypass": "frozen clearing chaos transaction 1099511629570",
+              "fx_ties_round_up": "cross_border_fx transaction 1781",
+              "leap_day_interest_omitted": "leap accrual chaos transaction 1099511628312",
+              "missing_idempotency": "same-key retry chaos transaction 1099511630259",
+              "overdraft_floor_exclusive": "overdraft edge chaos transaction 1099511629198",
+              "refund_cap_missing": "refund cap chaos transaction 1099511628298",
+              "reversal_credit_omitted": "overdraft edge chaos transaction 1099511629198",
+              "settlement_credit_short_one": "cash_sweep transaction 1370",
+              "stale_authorization_balance_write": "interleaved settle chaos transaction 1099511629790"
+            }
+          }
+        ]
+      },
+      {
+        "Seed": 44,
+        "Strategies": [
+          {
+            "Strategy": "naive",
+            "Cases": 192,
+            "Operations": 192,
+            "Killed": [
+              "fx_ties_round_up",
+              "currency_mismatch_accepted",
+              "settlement_credit_short_one"
+            ],
+            "FirstWitness": {
+              "currency_mismatch_accepted": "independent row 4",
+              "fx_ties_round_up": "independent row 45",
+              "settlement_credit_short_one": "independent row 6"
+            }
+          },
+          {
+            "Strategy": "ssfd",
+            "Cases": 192,
+            "Operations": 213,
+            "Killed": [
+              "fx_ties_round_up",
+              "settlement_credit_short_one"
+            ],
+            "FirstWitness": {
+              "fx_ties_round_up": "cross_border_fx transaction 1392",
+              "settlement_credit_short_one": "cash_sweep transaction 615"
+            }
+          },
+          {
+            "Strategy": "ssfd-chaos",
+            "Cases": 192,
+            "Operations": 320,
+            "Killed": [
+              "fx_ties_round_up",
+              "missing_idempotency",
+              "leap_day_interest_omitted",
+              "dst_fold_collision",
+              "overdraft_floor_exclusive",
+              "refund_cap_missing",
+              "frozen_debit_bypass",
+              "clearing_without_authorization",
+              "reversal_credit_omitted",
+              "cutoff_rounded_to_second",
+              "settlement_credit_short_one",
+              "stale_authorization_balance_write"
+            ],
+            "FirstWitness": {
+              "clearing_without_authorization": "clearing-before-auth chaos transaction 1099511628440",
+              "cutoff_rounded_to_second": "midnight cutoff chaos transaction 1099511629031",
+              "dst_fold_collision": "DST fold pair chaos transaction 1099511630484",
+              "frozen_debit_bypass": "frozen clearing chaos transaction 1099511630679",
+              "fx_ties_round_up": "cross_border_fx transaction 1392",
+              "leap_day_interest_omitted": "leap accrual chaos transaction 1099511628312",
+              "missing_idempotency": "same-key retry chaos transaction 1099511630981",
+              "overdraft_floor_exclusive": "overdraft edge chaos transaction 1099511629090",
+              "refund_cap_missing": "refund cap chaos transaction 1099511630379",
+              "reversal_credit_omitted": "overdraft edge chaos transaction 1099511629090",
+              "settlement_credit_short_one": "cash_sweep transaction 939",
+              "stale_authorization_balance_write": "interleaved settle chaos transaction 1099511628069"
+            }
+          }
+        ]
+      },
+      {
+        "Seed": 45,
+        "Strategies": [
+          {
+            "Strategy": "naive",
+            "Cases": 192,
+            "Operations": 192,
+            "Killed": [
+              "fx_ties_round_up",
+              "currency_mismatch_accepted",
+              "settlement_credit_short_one"
+            ],
+            "FirstWitness": {
+              "currency_mismatch_accepted": "independent row 7",
+              "fx_ties_round_up": "independent row 59",
+              "settlement_credit_short_one": "independent row 4"
+            }
+          },
+          {
+            "Strategy": "ssfd",
+            "Cases": 192,
+            "Operations": 213,
+            "Killed": [
+              "fx_ties_round_up",
+              "settlement_credit_short_one"
+            ],
+            "FirstWitness": {
+              "fx_ties_round_up": "cross_border_fx transaction 1924",
+              "settlement_credit_short_one": "cash_sweep transaction 1100"
+            }
+          },
+          {
+            "Strategy": "ssfd-chaos",
+            "Cases": 192,
+            "Operations": 319,
+            "Killed": [
+              "missing_idempotency",
+              "leap_day_interest_omitted",
+              "dst_fold_collision",
+              "overdraft_floor_exclusive",
+              "refund_cap_missing",
+              "frozen_debit_bypass",
+              "clearing_without_authorization",
+              "reversal_credit_omitted",
+              "cutoff_rounded_to_second",
+              "settlement_credit_short_one",
+              "stale_authorization_balance_write"
+            ],
+            "FirstWitness": {
+              "clearing_without_authorization": "clearing-before-auth chaos transaction 1099511629925",
+              "cutoff_rounded_to_second": "midnight cutoff chaos transaction 1099511628201",
+              "dst_fold_collision": "DST fold pair chaos transaction 1099511630484",
+              "frozen_debit_bypass": "frozen clearing chaos transaction 1099511628751",
+              "leap_day_interest_omitted": "leap accrual chaos transaction 1099511628312",
+              "missing_idempotency": "same-key retry chaos transaction 1099511628711",
+              "overdraft_floor_exclusive": "overdraft edge chaos transaction 1099511627792",
+              "refund_cap_missing": "refund cap chaos transaction 1099511630606",
+              "reversal_credit_omitted": "overdraft edge chaos transaction 1099511627792",
+              "settlement_credit_short_one": "cash_sweep transaction 143",
+              "stale_authorization_balance_write": "interleaved settle chaos transaction 1099511629871"
+            }
+          }
+        ]
+      },
+      {
+        "Seed": 46,
+        "Strategies": [
+          {
+            "Strategy": "naive",
+            "Cases": 192,
+            "Operations": 192,
+            "Killed": [
+              "fx_ties_round_up",
+              "currency_mismatch_accepted",
+              "settlement_credit_short_one"
+            ],
+            "FirstWitness": {
+              "currency_mismatch_accepted": "independent row 9",
+              "fx_ties_round_up": "independent row 51",
+              "settlement_credit_short_one": "independent row 1"
+            }
+          },
+          {
+            "Strategy": "ssfd",
+            "Cases": 192,
+            "Operations": 213,
+            "Killed": [
+              "fx_ties_round_up",
+              "settlement_credit_short_one"
+            ],
+            "FirstWitness": {
+              "fx_ties_round_up": "cross_border_fx transaction 1580",
+              "settlement_credit_short_one": "cash_sweep transaction 1902"
+            }
+          },
+          {
+            "Strategy": "ssfd-chaos",
+            "Cases": 192,
+            "Operations": 321,
+            "Killed": [
+              "fx_ties_round_up",
+              "missing_idempotency",
+              "leap_day_interest_omitted",
+              "dst_fold_collision",
+              "overdraft_floor_exclusive",
+              "refund_cap_missing",
+              "frozen_debit_bypass",
+              "clearing_without_authorization",
+              "reversal_credit_omitted",
+              "cutoff_rounded_to_second",
+              "settlement_credit_short_one",
+              "stale_authorization_balance_write"
+            ],
+            "FirstWitness": {
+              "clearing_without_authorization": "clearing-before-auth chaos transaction 1099511630674",
+              "cutoff_rounded_to_second": "midnight cutoff chaos transaction 1099511628887",
+              "dst_fold_collision": "DST fold pair chaos transaction 1099511630484",
+              "frozen_debit_bypass": "frozen clearing chaos transaction 1099511630868",
+              "fx_ties_round_up": "cross_border_fx transaction 310",
+              "leap_day_interest_omitted": "leap accrual chaos transaction 1099511628312",
+              "missing_idempotency": "same-key retry chaos transaction 1099511629791",
+              "overdraft_floor_exclusive": "overdraft edge chaos transaction 1099511629864",
+              "refund_cap_missing": "refund cap chaos transaction 1099511630001",
+              "reversal_credit_omitted": "overdraft edge chaos transaction 1099511629864",
+              "settlement_credit_short_one": "cash_sweep transaction 162",
+              "stale_authorization_balance_write": "interleaved settle chaos transaction 1099511628755"
+            }
+          }
+        ]
+      },
+      {
+        "Seed": 47,
+        "Strategies": [
+          {
+            "Strategy": "naive",
+            "Cases": 192,
+            "Operations": 192,
+            "Killed": [
+              "fx_ties_round_up",
+              "currency_mismatch_accepted",
+              "settlement_credit_short_one"
+            ],
+            "FirstWitness": {
+              "currency_mismatch_accepted": "independent row 4",
+              "fx_ties_round_up": "independent row 43",
+              "settlement_credit_short_one": "independent row 19"
+            }
+          },
+          {
+            "Strategy": "ssfd",
+            "Cases": 192,
+            "Operations": 213,
+            "Killed": [
+              "fx_ties_round_up",
+              "settlement_credit_short_one"
+            ],
+            "FirstWitness": {
+              "fx_ties_round_up": "cross_border_fx transaction 1013",
+              "settlement_credit_short_one": "cash_sweep transaction 1061"
+            }
+          },
+          {
+            "Strategy": "ssfd-chaos",
+            "Cases": 192,
+            "Operations": 320,
+            "Killed": [
+              "fx_ties_round_up",
+              "missing_idempotency",
+              "leap_day_interest_omitted",
+              "dst_fold_collision",
+              "overdraft_floor_exclusive",
+              "refund_cap_missing",
+              "frozen_debit_bypass",
+              "clearing_without_authorization",
+              "reversal_credit_omitted",
+              "cutoff_rounded_to_second",
+              "settlement_credit_short_one",
+              "stale_authorization_balance_write"
+            ],
+            "FirstWitness": {
+              "clearing_without_authorization": "clearing-before-auth chaos transaction 1099511628276",
+              "cutoff_rounded_to_second": "midnight cutoff chaos transaction 1099511630797",
+              "dst_fold_collision": "DST fold pair chaos transaction 1099511630484",
+              "frozen_debit_bypass": "frozen clearing chaos transaction 1099511628481",
+              "fx_ties_round_up": "cross_border_fx transaction 510",
+              "leap_day_interest_omitted": "leap accrual chaos transaction 1099511628312",
+              "missing_idempotency": "same-key retry chaos transaction 1099511629665",
+              "overdraft_floor_exclusive": "overdraft edge chaos transaction 1099511629801",
+              "refund_cap_missing": "refund cap chaos transaction 1099511628345",
+              "reversal_credit_omitted": "overdraft edge chaos transaction 1099511629801",
+              "settlement_credit_short_one": "cash_sweep transaction 144",
+              "stale_authorization_balance_write": "interleaved settle chaos transaction 1099511630087"
+            }
+          }
+        ]
+      },
+      {
+        "Seed": 48,
+        "Strategies": [
+          {
+            "Strategy": "naive",
+            "Cases": 192,
+            "Operations": 192,
+            "Killed": [
+              "fx_ties_round_up",
+              "currency_mismatch_accepted",
+              "settlement_credit_short_one"
+            ],
+            "FirstWitness": {
+              "currency_mismatch_accepted": "independent row 12",
+              "fx_ties_round_up": "independent row 5",
+              "settlement_credit_short_one": "independent row 3"
+            }
+          },
+          {
+            "Strategy": "ssfd",
+            "Cases": 192,
+            "Operations": 213,
+            "Killed": [
+              "fx_ties_round_up",
+              "settlement_credit_short_one"
+            ],
+            "FirstWitness": {
+              "fx_ties_round_up": "cross_border_fx transaction 383",
+              "settlement_credit_short_one": "cash_sweep transaction 461"
+            }
+          },
+          {
+            "Strategy": "ssfd-chaos",
+            "Cases": 192,
+            "Operations": 319,
+            "Killed": [
+              "fx_ties_round_up",
+              "missing_idempotency",
+              "leap_day_interest_omitted",
+              "dst_fold_collision",
+              "overdraft_floor_exclusive",
+              "refund_cap_missing",
+              "frozen_debit_bypass",
+              "clearing_without_authorization",
+              "reversal_credit_omitted",
+              "cutoff_rounded_to_second",
+              "settlement_credit_short_one",
+              "stale_authorization_balance_write"
+            ],
+            "FirstWitness": {
+              "clearing_without_authorization": "clearing-before-auth chaos transaction 1099511628159",
+              "cutoff_rounded_to_second": "midnight cutoff chaos transaction 1099511631004",
+              "dst_fold_collision": "DST fold pair chaos transaction 1099511630484",
+              "frozen_debit_bypass": "frozen clearing chaos transaction 1099511628949",
+              "fx_ties_round_up": "cross_border_fx transaction 1559",
+              "leap_day_interest_omitted": "leap accrual chaos transaction 1099511628312",
+              "missing_idempotency": "same-key retry chaos transaction 1099511629683",
+              "overdraft_floor_exclusive": "overdraft edge chaos transaction 1099511629792",
+              "refund_cap_missing": "refund cap chaos transaction 1099511631038",
+              "reversal_credit_omitted": "overdraft edge chaos transaction 1099511629792",
+              "settlement_credit_short_one": "cash_sweep transaction 1285",
+              "stale_authorization_balance_write": "interleaved settle chaos transaction 1099511629520"
+            }
+          }
+        ]
+      },
+      {
+        "Seed": 49,
+        "Strategies": [
+          {
+            "Strategy": "naive",
+            "Cases": 192,
+            "Operations": 192,
+            "Killed": [
+              "fx_ties_round_up",
+              "currency_mismatch_accepted",
+              "settlement_credit_short_one"
+            ],
+            "FirstWitness": {
+              "currency_mismatch_accepted": "independent row 1",
+              "fx_ties_round_up": "independent row 51",
+              "settlement_credit_short_one": "independent row 4"
+            }
+          },
+          {
+            "Strategy": "ssfd",
+            "Cases": 192,
+            "Operations": 213,
+            "Killed": [
+              "fx_ties_round_up",
+              "settlement_credit_short_one"
+            ],
+            "FirstWitness": {
+              "fx_ties_round_up": "cross_border_fx transaction 30",
+              "settlement_credit_short_one": "cash_sweep transaction 160"
+            }
+          },
+          {
+            "Strategy": "ssfd-chaos",
+            "Cases": 192,
+            "Operations": 320,
+            "Killed": [
+              "fx_ties_round_up",
+              "missing_idempotency",
+              "leap_day_interest_omitted",
+              "dst_fold_collision",
+              "overdraft_floor_exclusive",
+              "refund_cap_missing",
+              "frozen_debit_bypass",
+              "clearing_without_authorization",
+              "reversal_credit_omitted",
+              "cutoff_rounded_to_second",
+              "settlement_credit_short_one",
+              "stale_authorization_balance_write"
+            ],
+            "FirstWitness": {
+              "clearing_without_authorization": "clearing-before-auth chaos transaction 1099511627943",
+              "cutoff_rounded_to_second": "midnight cutoff chaos transaction 1099511630354",
+              "dst_fold_collision": "DST fold pair chaos transaction 1099511630484",
+              "frozen_debit_bypass": "frozen clearing chaos transaction 1099511629597",
+              "fx_ties_round_up": "cross_border_fx transaction 1777",
+              "leap_day_interest_omitted": "leap accrual chaos transaction 1099511628312",
+              "missing_idempotency": "same-key retry chaos transaction 1099511628531",
+              "overdraft_floor_exclusive": "overdraft edge chaos transaction 1099511629450",
+              "refund_cap_missing": "refund cap chaos transaction 1099511629308",
+              "reversal_credit_omitted": "overdraft edge chaos transaction 1099511629450",
+              "settlement_credit_short_one": "cash_sweep transaction 1461",
+              "stale_authorization_balance_write": "interleaved settle chaos transaction 1099511630042"
+            }
+          }
+        ]
+      },
+      {
+        "Seed": 50,
+        "Strategies": [
+          {
+            "Strategy": "naive",
+            "Cases": 192,
+            "Operations": 192,
+            "Killed": [
+              "fx_ties_round_up",
+              "currency_mismatch_accepted",
+              "settlement_credit_short_one"
+            ],
+            "FirstWitness": {
+              "currency_mismatch_accepted": "independent row 7",
+              "fx_ties_round_up": "independent row 56",
+              "settlement_credit_short_one": "independent row 2"
+            }
+          },
+          {
+            "Strategy": "ssfd",
+            "Cases": 192,
+            "Operations": 213,
+            "Killed": [
+              "fx_ties_round_up",
+              "settlement_credit_short_one"
+            ],
+            "FirstWitness": {
+              "fx_ties_round_up": "cross_border_fx transaction 187",
+              "settlement_credit_short_one": "cash_sweep transaction 1254"
+            }
+          },
+          {
+            "Strategy": "ssfd-chaos",
+            "Cases": 192,
+            "Operations": 317,
+            "Killed": [
+              "missing_idempotency",
+              "leap_day_interest_omitted",
+              "dst_fold_collision",
+              "overdraft_floor_exclusive",
+              "refund_cap_missing",
+              "frozen_debit_bypass",
+              "clearing_without_authorization",
+              "reversal_credit_omitted",
+              "cutoff_rounded_to_second",
+              "settlement_credit_short_one",
+              "stale_authorization_balance_write"
+            ],
+            "FirstWitness": {
+              "clearing_without_authorization": "clearing-before-auth chaos transaction 1099511628800",
+              "cutoff_rounded_to_second": "midnight cutoff chaos transaction 1099511629301",
+              "dst_fold_collision": "DST fold pair chaos transaction 1099511630484",
+              "frozen_debit_bypass": "frozen clearing chaos transaction 1099511628391",
+              "leap_day_interest_omitted": "leap accrual chaos transaction 1099511628312",
+              "missing_idempotency": "same-key retry chaos transaction 1099511628648",
+              "overdraft_floor_exclusive": "overdraft edge chaos transaction 1099511630757",
+              "refund_cap_missing": "refund cap chaos transaction 1099511629884",
+              "reversal_credit_omitted": "overdraft edge chaos transaction 1099511630757",
+              "settlement_credit_short_one": "cash_sweep transaction 1861",
+              "stale_authorization_balance_write": "interleaved settle chaos transaction 1099511629178"
+            }
+          }
+        ]
+      },
+      {
+        "Seed": 51,
+        "Strategies": [
+          {
+            "Strategy": "naive",
+            "Cases": 192,
+            "Operations": 192,
+            "Killed": [
+              "fx_ties_round_up",
+              "leap_day_interest_omitted",
+              "currency_mismatch_accepted",
+              "settlement_credit_short_one"
+            ],
+            "FirstWitness": {
+              "currency_mismatch_accepted": "independent row 3",
+              "fx_ties_round_up": "independent row 1",
+              "leap_day_interest_omitted": "independent row 174",
+              "settlement_credit_short_one": "independent row 2"
+            }
+          },
+          {
+            "Strategy": "ssfd",
+            "Cases": 192,
+            "Operations": 213,
+            "Killed": [
+              "fx_ties_round_up",
+              "settlement_credit_short_one"
+            ],
+            "FirstWitness": {
+              "fx_ties_round_up": "cross_border_fx transaction 60",
+              "settlement_credit_short_one": "cash_sweep transaction 144"
+            }
+          },
+          {
+            "Strategy": "ssfd-chaos",
+            "Cases": 192,
+            "Operations": 318,
+            "Killed": [
+              "fx_ties_round_up",
+              "missing_idempotency",
+              "leap_day_interest_omitted",
+              "dst_fold_collision",
+              "overdraft_floor_exclusive",
+              "refund_cap_missing",
+              "frozen_debit_bypass",
+              "clearing_without_authorization",
+              "reversal_credit_omitted",
+              "cutoff_rounded_to_second",
+              "settlement_credit_short_one",
+              "stale_authorization_balance_write"
+            ],
+            "FirstWitness": {
+              "clearing_without_authorization": "clearing-before-auth chaos transaction 1099511628440",
+              "cutoff_rounded_to_second": "midnight cutoff chaos transaction 1099511630869",
+              "dst_fold_collision": "DST fold pair chaos transaction 1099511630484",
+              "frozen_debit_bypass": "frozen clearing chaos transaction 1099511629660",
+              "fx_ties_round_up": "cross_border_fx transaction 363",
+              "leap_day_interest_omitted": "leap accrual chaos transaction 1099511628312",
+              "missing_idempotency": "same-key retry chaos transaction 1099511629017",
+              "overdraft_floor_exclusive": "overdraft edge chaos transaction 1099511630125",
+              "refund_cap_missing": "refund cap chaos transaction 1099511630534",
+              "reversal_credit_omitted": "overdraft edge chaos transaction 1099511630125",
+              "settlement_credit_short_one": "cash_sweep transaction 1245",
+              "stale_authorization_balance_write": "interleaved settle chaos transaction 1099511629439"
+            }
+          }
+        ]
+      },
+      {
+        "Seed": 52,
+        "Strategies": [
+          {
+            "Strategy": "naive",
+            "Cases": 192,
+            "Operations": 192,
+            "Killed": [
+              "fx_ties_round_up",
+              "currency_mismatch_accepted",
+              "settlement_credit_short_one"
+            ],
+            "FirstWitness": {
+              "currency_mismatch_accepted": "independent row 2",
+              "fx_ties_round_up": "independent row 45",
+              "settlement_credit_short_one": "independent row 4"
+            }
+          },
+          {
+            "Strategy": "ssfd",
+            "Cases": 192,
+            "Operations": 213,
+            "Killed": [
+              "fx_ties_round_up",
+              "settlement_credit_short_one"
+            ],
+            "FirstWitness": {
+              "fx_ties_round_up": "cross_border_fx transaction 1144",
+              "settlement_credit_short_one": "cash_sweep transaction 1375"
+            }
+          },
+          {
+            "Strategy": "ssfd-chaos",
+            "Cases": 192,
+            "Operations": 319,
+            "Killed": [
+              "fx_ties_round_up",
+              "missing_idempotency",
+              "leap_day_interest_omitted",
+              "dst_fold_collision",
+              "overdraft_floor_exclusive",
+              "refund_cap_missing",
+              "frozen_debit_bypass",
+              "clearing_without_authorization",
+              "reversal_credit_omitted",
+              "cutoff_rounded_to_second",
+              "settlement_credit_short_one",
+              "stale_authorization_balance_write"
+            ],
+            "FirstWitness": {
+              "clearing_without_authorization": "clearing-before-auth chaos transaction 1099511627925",
+              "cutoff_rounded_to_second": "midnight cutoff chaos transaction 1099511629922",
+              "dst_fold_collision": "DST fold pair chaos transaction 1099511630484",
+              "frozen_debit_bypass": "frozen clearing chaos transaction 1099511630841",
+              "fx_ties_round_up": "cross_border_fx transaction 1602",
+              "leap_day_interest_omitted": "leap accrual chaos transaction 1099511628312",
+              "missing_idempotency": "same-key retry chaos transaction 1099511627944",
+              "overdraft_floor_exclusive": "overdraft edge chaos transaction 1099511630368",
+              "refund_cap_missing": "refund cap chaos transaction 1099511630759",
+              "reversal_credit_omitted": "overdraft edge chaos transaction 1099511630368",
+              "settlement_credit_short_one": "cash_sweep transaction 134",
+              "stale_authorization_balance_write": "interleaved settle chaos transaction 1099511629088"
+            }
+          }
+        ]
+      },
+      {
+        "Seed": 53,
+        "Strategies": [
+          {
+            "Strategy": "naive",
+            "Cases": 192,
+            "Operations": 192,
+            "Killed": [
+              "fx_ties_round_up",
+              "currency_mismatch_accepted",
+              "settlement_credit_short_one"
+            ],
+            "FirstWitness": {
+              "currency_mismatch_accepted": "independent row 2",
+              "fx_ties_round_up": "independent row 71",
+              "settlement_credit_short_one": "independent row 1"
+            }
+          },
+          {
+            "Strategy": "ssfd",
+            "Cases": 192,
+            "Operations": 213,
+            "Killed": [
+              "fx_ties_round_up",
+              "settlement_credit_short_one"
+            ],
+            "FirstWitness": {
+              "fx_ties_round_up": "cross_border_fx transaction 1402",
+              "settlement_credit_short_one": "cash_sweep transaction 1406"
+            }
+          },
+          {
+            "Strategy": "ssfd-chaos",
+            "Cases": 192,
+            "Operations": 320,
+            "Killed": [
+              "fx_ties_round_up",
+              "missing_idempotency",
+              "leap_day_interest_omitted",
+              "dst_fold_collision",
+              "overdraft_floor_exclusive",
+              "refund_cap_missing",
+              "frozen_debit_bypass",
+              "clearing_without_authorization",
+              "reversal_credit_omitted",
+              "cutoff_rounded_to_second",
+              "settlement_credit_short_one",
+              "stale_authorization_balance_write"
+            ],
+            "FirstWitness": {
+              "clearing_without_authorization": "clearing-before-auth chaos transaction 1099511630764",
+              "cutoff_rounded_to_second": "midnight cutoff chaos transaction 1099511630165",
+              "dst_fold_collision": "DST fold pair chaos transaction 1099511630484",
+              "frozen_debit_bypass": "frozen clearing chaos transaction 1099511629858",
+              "fx_ties_round_up": "cross_border_fx transaction 1064",
+              "leap_day_interest_omitted": "leap accrual chaos transaction 1099511628312",
+              "missing_idempotency": "same-key retry chaos transaction 1099511630612",
+              "overdraft_floor_exclusive": "overdraft edge chaos transaction 1099511628325",
+              "refund_cap_missing": "refund cap chaos transaction 1099511628507",
+              "reversal_credit_omitted": "overdraft edge chaos transaction 1099511628325",
+              "settlement_credit_short_one": "cash_sweep transaction 298",
+              "stale_authorization_balance_write": "interleaved settle chaos transaction 1099511629961"
+            }
+          }
+        ]
+      }
+    ],
+    "Summary": [
+      {
+        "Strategy": "naive",
+        "Seeds": 12,
+        "MutantRuns": 156,
+        "Kills": 37,
+        "ScorePercent": 23.71794871794872,
+        "KillsByMutation": {
+          "clearing_without_authorization": 0,
+          "currency_mismatch_accepted": 12,
+          "cutoff_rounded_to_second": 0,
+          "dst_fold_collision": 0,
+          "frozen_debit_bypass": 0,
+          "fx_ties_round_up": 12,
+          "leap_day_interest_omitted": 1,
+          "missing_idempotency": 0,
+          "overdraft_floor_exclusive": 0,
+          "refund_cap_missing": 0,
+          "reversal_credit_omitted": 0,
+          "settlement_credit_short_one": 12,
+          "stale_authorization_balance_write": 0
+        }
+      },
+      {
+        "Strategy": "ssfd",
+        "Seeds": 12,
+        "MutantRuns": 156,
+        "Kills": 24,
+        "ScorePercent": 15.384615384615385,
+        "KillsByMutation": {
+          "clearing_without_authorization": 0,
+          "currency_mismatch_accepted": 0,
+          "cutoff_rounded_to_second": 0,
+          "dst_fold_collision": 0,
+          "frozen_debit_bypass": 0,
+          "fx_ties_round_up": 12,
+          "leap_day_interest_omitted": 0,
+          "missing_idempotency": 0,
+          "overdraft_floor_exclusive": 0,
+          "refund_cap_missing": 0,
+          "reversal_credit_omitted": 0,
+          "settlement_credit_short_one": 12,
+          "stale_authorization_balance_write": 0
+        }
+      },
+      {
+        "Strategy": "ssfd-chaos",
+        "Seeds": 12,
+        "MutantRuns": 156,
+        "Kills": 142,
+        "ScorePercent": 91.02564102564102,
+        "KillsByMutation": {
+          "clearing_without_authorization": 12,
+          "currency_mismatch_accepted": 0,
+          "cutoff_rounded_to_second": 12,
+          "dst_fold_collision": 12,
+          "frozen_debit_bypass": 12,
+          "fx_ties_round_up": 10,
+          "leap_day_interest_omitted": 12,
+          "missing_idempotency": 12,
+          "overdraft_floor_exclusive": 12,
+          "refund_cap_missing": 12,
+          "reversal_credit_omitted": 12,
+          "settlement_credit_short_one": 12,
+          "stale_authorization_balance_write": 12
+        }
+      }
+    ],
+    "Paired": [
+      {
+        "First": "ssfd",
+        "Second": "naive",
+        "FirstHigher": 0,
+        "SecondHigher": 12,
+        "Ties": 0,
+        "MeanDifferencePP": -8.333333333333334,
+        "TwoSidedExactP": 0.00048828125
+      },
+      {
+        "First": "ssfd-chaos",
+        "Second": "naive",
+        "FirstHigher": 12,
+        "SecondHigher": 0,
+        "Ties": 0,
+        "MeanDifferencePP": 67.3076923076923,
+        "TwoSidedExactP": 0.00048828125
+      },
+      {
+        "First": "ssfd-chaos",
+        "Second": "ssfd",
+        "FirstHigher": 12,
+        "SecondHigher": 0,
+        "Ties": 0,
+        "MeanDifferencePP": 75.64102564102564,
+        "TwoSidedExactP": 0.00048828125
+      }
+    ]
+  }
+}

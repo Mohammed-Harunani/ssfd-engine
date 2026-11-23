@@ -1,0 +1,68 @@
+name: CI
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Vet, race tests, and mutation evaluation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-go@v6
+        with:
+          go-version: 'stable'
+          cache-dependency-path: go.mod
+
+      - name: Vet
+        run: go vet ./...
+
+      - name: Race tests
+        env:
+          CGO_ENABLED: '1'
+        run: go test -race -cover ./...
+
+      - name: Mutation evaluation
+        run: go run ./cmd/ssfd-eval -mode mutation -seed 42 -mutation-seeds 12 -cases 192 -format markdown
+
+  build:
+    name: Build ${{ matrix.goos }}/${{ matrix.goarch }}
+    needs: verify
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {goos: linux, goarch: amd64}
+          - {goos: linux, goarch: arm64}
+          - {goos: windows, goarch: amd64}
+          - {goos: darwin, goarch: amd64}
+          - {goos: darwin, goarch: arm64}
+
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-go@v6
+        with:
+          go-version: 'stable'
+          cache-dependency-path: go.mod
+
+      - name: Build both CLI binaries
+        env:
+          CGO_ENABLED: '0'
+          GOOS: ${{ matrix.goos }}
+          GOARCH: ${{ matrix.goarch }}
+        run: |
+          mkdir -p dist
+          suffix=""
+          if [ "$GOOS" = "windows" ]; then suffix=".exe"; fi
+          go build -trimpath -o "dist/ssfd-demo${suffix}" ./cmd/ssfd-demo
+          go build -trimpath -o "dist/ssfd-eval${suffix}" ./cmd/ssfd-eval
+
+      - name: Upload binaries
+        uses: actions/upload-artifact@v4
+        with:
+          name: ssfd-engine-${{ matrix.goos }}-${{ matrix.goarch }}
+          path: dist/
+          if-no-files-found: error
