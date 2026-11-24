@@ -48,7 +48,7 @@ jobs:
           go-version: 'stable'
           cache-dependency-path: go.mod
 
-      - name: Build both CLI binaries
+      - name: Build SSFD binaries
         env:
           CGO_ENABLED: '0'
           GOOS: ${{ matrix.goos }}
@@ -59,6 +59,7 @@ jobs:
           if [ "$GOOS" = "windows" ]; then suffix=".exe"; fi
           go build -trimpath -o "dist/ssfd-demo${suffix}" ./cmd/ssfd-demo
           go build -trimpath -o "dist/ssfd-eval${suffix}" ./cmd/ssfd-eval
+          go build -trimpath -o "dist/ssfd-ui${suffix}" ./cmd/ssfd-ui
 
       - name: Upload binaries
         uses: actions/upload-artifact@v4

@@ -8,6 +8,21 @@
 
 SSFD-Engine generates multi-year account and transaction histories from synthetic inputs. A seed and fixed configuration reproduce the same workload. Each booked journal balances independently by currency, with money represented in integer minor units. The exporter produces modern payment and statement fixtures alongside legacy card messages and mainframe batches.
 
+![SSFD-Engine dashboard showing ledger reconciliation, wire samples, and live mutation results](docs/images/ssfd-ui.png)
+
+## Launch the Web UI
+
+```bash
+go run ./cmd/ssfd-ui
+```
+
+Open [localhost:8080](http://localhost:8080). Run a live simulation to see the GBP
+and USD reconciliation, inspect ISO 20022, ISO 8583, and IBM CP037 samples, or
+run the two-seed mutation comparison. The console and API are served by one Go
+binary with embedded assets.
+
+Use `go run ./cmd/ssfd-ui -addr localhost:8081` if port 8080 is already in use.
+
 ## Architecture
 
 ```mermaid
